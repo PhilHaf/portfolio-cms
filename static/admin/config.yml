@@ -19,7 +19,7 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Techniques", name: "tech", widget: "string"}
-  - label: "test"
+  - label: "Site"
     name: "site"
     files:
       - label: "Intro"
