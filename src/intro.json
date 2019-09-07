@@ -1,0 +1,10 @@
+{
+  "title": "title",
+  "subtitle": "subtitle",
+  "header": "header",
+  "description": "description",
+  "descAttributes": [
+    "att1",
+    "att2"
+  ]
+}

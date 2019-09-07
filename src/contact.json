@@ -1,0 +1,10 @@
+{
+  "text": "text",
+  "header": "header",
+  "links": [
+    {
+      "header": "header",
+      "link": "link"
+    }
+  ]
+}
