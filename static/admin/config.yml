@@ -6,16 +6,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - label: "Projects"
-  #   name: "projects"
-  #   file: "src/projects.json"
-  #   create: true
-  #   fields:
-  #     - {label: "Name", name: "name", widget: "string"}
-  #     - {label: "Year", name: "year", widget: "string"}
-  #     - {label: "Featured Image", name: "thumbnail", widget: "image"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
-  #     - {label: "Techniques", name: "tech", widget: "string"}
+  - label: "Projects"
+    name: "projects"
+    file: "src/projects.json"
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Techniques", name: "tech", widget: "string"}
   - label: "test"
     name: "site"
     files:
