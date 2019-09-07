@@ -12,7 +12,7 @@ collections:
     create: true
     format: "json"
     identifier_field: name
-    slug: "{{name}}-{{slug}}"
+    slug: '{{name}}-{{slug}}'
     fields:
        - {label: "Title", name: "title", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
