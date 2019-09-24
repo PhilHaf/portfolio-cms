@@ -8,89 +8,89 @@ public_folder: /img
 collections:
   - label: "Projects"
     name: "projects"
-    folder: "src/projects"
+    folder: "static/data/projects"
     create: true
     format: "json"
     identifier_field: name
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Year", name: "year", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Techniques", name: "tech", widget: "string"}
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Techniques", name: "tech", widget: "string" }
   - label: "Site"
     name: "site"
     files:
       - label: "Intro"
         name: "intro"
         create: true
-        file: "src/intro.json"
+        file: "static/data/intro.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Header", name: "header", widget: "string"}
-          - {label: "Description", name: "description", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Header", name: "header", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
           - label: Description Attributes
             name: descAttributes
             widget: list
-            field: {label: Attribute, name: attr, widget: string}
-        
+            field: { label: Attribute, name: attr, widget: string }
+
       - label: "Displayed Projects"
         name: "displayedProjects"
         create: true
-        file: "src/shownProjects.json"
+        file: "static/data/shownProjects.json"
         fields:
-          - {label: "Header", name: "header", widget: "string"}
+          - { label: "Header", name: "header", widget: "string" }
           - label: Project List
-            name: projectlist 
+            name: projectlist
             widget: list
-            fields: 
-              - {label: shownProject, 
-                name: shownproject,
-                widget: relation, 
-                collection: projects, 
-                searchFields: ["name"],
-                valueField: "name",
-                displayFields: ["name"]
-                }  
+            fields:
+              - {
+                  label: shownProject,
+                  name: shownproject,
+                  widget: relation,
+                  collection: projects,
+                  searchFields: ["name"],
+                  valueField: "name",
+                  displayFields: ["name"],
+                }
       - label: "Skill"
         name: "skill"
         create: true
-        file: "src/skill.json"
+        file: "static/data/skill.json"
         fields:
-          - {label: "Text", name: "text", widget: "string"}
-          - {label: "Header", name: "header", widget: "string"}
+          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Header", name: "header", widget: "string" }
           - label: Companies
             name: companies
             widget: list
             fields:
-                - {label: Company, name: company, widget: string}
-                - {label: Work, name: work, widget: string}
-                - {label: Position, name: position, widget: string}
-                - {label: Time, name: time, widget: string}
+              - { label: Company, name: company, widget: string }
+              - { label: Work, name: work, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Time, name: time, widget: string }
 
       - label: "Contact"
         name: "contact"
         create: true
-        file: "src/contact.json"
+        file: "static/data/contact.json"
         fields:
-          - {label: "Text", name: "text", widget: "string"}
-          - {label: "Header", name: "header", widget: "string"}
+          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Header", name: "header", widget: "string" }
           - label: Links
             name: links
             widget: list
             fields:
-                - {label: Header, name: header, widget: string}
-                - {label: Logo, name: logo, widget: image}
-                - {label: Link, name: link, widget: string}
+              - { label: Header, name: header, widget: string }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Link, name: link, widget: string }
 
       - label: "Impressum"
         name: "impressum"
         create: true
-        file: "src/impressum.json"
+        file: "static/data/impressum.json"
         fields:
-          - {label: "Left", name: "left", widget: "string"}
-          - {label: "Center", name: "center", widget: "string"}
-          - {label: "Right", name: "right", widget: "string"}
-        
+          - { label: "Left", name: "left", widget: "string" }
+          - { label: "Center", name: "center", widget: "string" }
+          - { label: "Right", name: "right", widget: "string" }
